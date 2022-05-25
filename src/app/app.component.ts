@@ -1,9 +1,5 @@
 import { Component, HostListener, ViewChild } from '@angular/core';
 import {
-  MatProgressBar,
-  ProgressAnimationEnd,
-} from '@angular/material/progress-bar';
-import {
   delay,
   distinctUntilChanged,
   interval,
@@ -25,14 +21,19 @@ import {
 export class AppComponent {
   title = 'portfolio';
   scrolled!: boolean;
-  $progressval: any;
-  @ViewChild(MatProgressBar) progressBar!: MatProgressBar;
+  $cssval: any;
+  $htmlval: any;
+  $javascriptval: any;
+  $goval: any;
 
   ngAfterViewInit(): void {
-    this.$progressval = this.getProgressTimer(90);
+    this.$cssval = this.getProgressTimer(80);
+    this.$htmlval = this.getProgressTimer(90);
+    this.$javascriptval = this.getProgressTimer(75);
+    this.$goval = this.getProgressTimer(80);
   }
 
-  public getProgressTimer(limit: number): Observable<any> {
+  public getProgressTimer(limit: number): any {
     return timer(0, 25).pipe(
       map((progress) => (progress * 5 < 100 ? progress * 5 : 100)),
       takeWhile((progress) => progress <= limit)
