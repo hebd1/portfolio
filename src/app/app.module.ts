@@ -5,9 +5,10 @@ import { AppComponent } from './app.component';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {} from '@angular/material/core';
+import { ProgressDirective } from './directives/progress.directive';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, ProgressDirective],
   imports: [
     MatProgressBarModule,
     BrowserModule,

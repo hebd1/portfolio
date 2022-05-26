@@ -286,6 +286,7 @@ h6 {
   width: 15rem;
   height: 15rem;
 }
+
 #hero:before {
   content: "";
   background: rgba(0, 0, 0, 0.65);

@@ -143,6 +143,16 @@
 
               <div class="skills-content ps-lg-4">
                 <div class="progress">
+                  <div
+                    [appProgress]="90"
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="75"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <div class="progress">
                   <span class="skill"
                     >HTML <i class="val"> {{ $htmlval | async }}</i></span
                   >
