@@ -143,6 +143,7 @@
 
               <div class="skills-content ps-lg-4">
                 <div class="progress">
+                  <span class="skill">HTML <i class="val"> 90%</i></span>
                   <div
                     [appProgress]="90"
                     class="progress-bar"
@@ -152,45 +153,43 @@
                     aria-valuemax="100"
                   ></div>
                 </div>
+
                 <div class="progress">
-                  <span class="skill"
-                    >HTML <i class="val"> {{ $htmlval | async }}</i></span
-                  >
-                  <mat-progress-bar
-                    mode="determinate"
-                    [value]="$htmlval | async"
-                  ></mat-progress-bar>
+                  <span class="skill">CSS <i class="val"> 75%</i></span>
+                  <div
+                    [appProgress]="75"
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="75"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
                 </div>
 
                 <div class="progress">
                   <span class="skill"
-                    >CSS <i class="val"> {{ $cssval | async }}</i></span
+                    >Javascript & Typescript <i class="val"> 80%</i></span
                   >
-                  <mat-progress-bar
-                    mode="determinate"
-                    [value]="$cssval | async"
-                  ></mat-progress-bar>
+                  <div
+                    [appProgress]="80"
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="75"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
                 </div>
 
                 <div class="progress">
-                  <span class="skill"
-                    >Javascript & Typescript
-                    <i class="val"> {{ $javascriptval | async }}</i></span
-                  >
-                  <mat-progress-bar
-                    mode="determinate"
-                    [value]="$javascriptval | async"
-                  ></mat-progress-bar>
-                </div>
-
-                <div class="progress">
-                  <span class="skill"
-                    >Go <i class="val"> {{ $goval | async }}</i></span
-                  >
-                  <mat-progress-bar
-                    mode="determinate"
-                    [value]="$goval | async"
-                  ></mat-progress-bar>
+                  <span class="skill">Go <i class="val"> 85%</i></span>
+                  <div
+                    [appProgress]="85"
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="75"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
                 </div>
               </div>
             </div>
