@@ -474,6 +474,7 @@ section {
 /*--------------------------------------------------------------
   # About Me
   --------------------------------------------------------------*/
+
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
@@ -543,8 +544,15 @@ section {
   background-size: cover;
   min-height: 500px;
 }
+
+.about .image-container {
+  min-height: 500px;
+}
 .about .skills-content {
   margin-top: 30px;
+}
+.about .skills-container {
+  min-height: 60px;
 }
 .about .skills-content .progress {
   height: 60px;
