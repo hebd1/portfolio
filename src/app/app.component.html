@@ -61,7 +61,7 @@
 
     <!-- ======= Hero Section ======= -->
     <section id="hero">
-      <div class="hero-container">
+      <div [@fadeInOnEnter] [@fadeOutOnLeave] class="hero-container">
         <div id="profile_pic" class="text-center">
           <img id="headshot" class="img-fluid" src="assets/img/me.png" />
         </div>
@@ -80,7 +80,7 @@
       <!-- ======= About Me Section ======= -->
       <section id="about" class="about">
         <div class="container">
-          <div class="section-title">
+          <div #testDiv class="section-title">
             <span>About Me</span>
             <h2>About Me</h2>
             <p>
@@ -91,10 +91,16 @@
 
           <div class="row">
             <div
+              *ngIf="isVisible"
+              [@slideInLeftOnEnter]
+              [@fadeOutOnLeave]
               class="image col-lg-4 d-flex align-items-stretch justify-content-center justify-content-lg-start"
             ></div>
             <div class="col-lg-8 d-flex flex-column align-items-stretch">
               <div
+                *ngIf="isVisible"
+                [@fadeInOnEnter]
+                [@fadeOutOnLeave]
                 class="content ps-lg-4 d-flex flex-column justify-content-center"
               >
                 <div class="row">
