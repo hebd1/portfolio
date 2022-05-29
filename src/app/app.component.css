@@ -540,9 +540,9 @@ section {
   color: #82909c;
 }
 .about .image {
-  background: url("../assets/img/me.jpg") center center no-repeat;
+  background: url("../assets/img/portfolio/hiking.jpg") center center no-repeat;
   background-size: cover;
-  min-height: 500px;
+  min-height: 400px;
 }
 
 .about .image-container {

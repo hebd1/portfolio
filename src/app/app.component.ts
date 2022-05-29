@@ -34,8 +34,7 @@ export class AppComponent {
       const rect = this.testDiv.nativeElement.getBoundingClientRect();
       const topShown = rect.top >= 0;
       const bottomShown = rect.bottom <= window.innerHeight;
-
-      this.isVisible = topShown && bottomShown;
+      this.isVisible = bottomShown;
     }
   }
 }
