@@ -6,6 +6,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {} from '@angular/material/core';
 import { ProgressDirective } from './directives/progress.directive';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [AppComponent, ProgressDirective],
@@ -14,6 +15,7 @@ import { ProgressDirective } from './directives/progress.directive';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    MatIconModule,
   ],
   exports: [MatProgressBarModule],
   providers: [],
