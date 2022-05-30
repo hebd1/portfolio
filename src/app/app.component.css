@@ -308,6 +308,9 @@ h6 {
   flex-direction: column;
   padding: 0 15px;
 }
+#hero .hero-container > * {
+  margin: 1rem 0;
+}
 #hero h1 {
   margin: 0 0 10px 0;
   font-size: 64px;
@@ -1154,7 +1157,8 @@ section {
   # Footer
   --------------------------------------------------------------*/
 #footer {
-  background: url("../assets/img/footer-bg.jpg") top center no-repeat;
+  background: url(https://images.unsplash.com/photo-1549321495-305eb13f8aa9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)
+    top center no-repeat;
   background-size: cover;
   color: #fff;
   font-size: 14px;
