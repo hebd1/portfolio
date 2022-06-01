@@ -61,6 +61,27 @@
 
     <!-- ======= Hero Section ======= -->
     <section id="hero">
+      <div class="social-vert-container">
+        <ul
+          *ngIf="!scrolled"
+          [@slideInUpOnEnter]
+          [@fadeOutOnLeave]
+          class="social-vert"
+        >
+          <li>
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </li>
+          <li>
+            <a href="#" class="telegram"><i class="bi bi-telegram"></i></a>
+          </li>
+        </ul>
+      </div>
       <div [@fadeInOnEnter] [@fadeOutOnLeave] class="hero-container">
         <div id="profile_pic" class="text-center">
           <img id="headshot" class="img-fluid" src="assets/img/me.png" />
@@ -113,10 +134,6 @@
                         <i class="bi bi-chevron-right"></i>
                         <strong>School:</strong>
                         <span>University of Utah</span>
-                      </li>
-                      <li>
-                        <i class="bi bi-chevron-right"></i>
-                        <strong>Website:</strong> <span>www.example.com</span>
                       </li>
                       <li>
                         <i class="bi bi-chevron-right"></i>
@@ -202,6 +219,17 @@
                       aria-valuemax="100"
                     ></div>
                   </div>
+                  <div class="progress">
+                    <span class="skill">Python <i class="val"> 75%</i></span>
+                    <div
+                      [appProgress]="75"
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="75"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -262,12 +290,46 @@
                   neque etlon sader mart dila
                 </p>
               </div>
+              <h3 class="resume-title">Achievements</h3>
+              <div class="resume-item">
+                <h4>Educational</h4>
+                <ul>
+                  <li>
+                    Dean’s List: fall 2016, spring 2018, fall 2018, spring 2019,
+                    Fall 2020
+                  </li>
+                  <li>Recipient, Utah Flagship Scholarship</li>
+                </ul>
+              </div>
+              <div class="resume-item">
+                <h4>Extra Cirricular</h4>
+                <ul>
+                  <li>
+                    Hack The U - Event Organizer of Utah's largest Hackathon
+                  </li>
+                  <li>
+                    National Society of Leadership and Success (2019 Induction)
+                  </li>
+                </ul>
+              </div>
+              <div class="resume-item">
+                <h4>Other</h4>
+                <ul>
+                  <li>
+                    Completed a 2 year religious humanitarian mission in Russia
+                  </li>
+                  <li>
+                    Multiple Android Apps published on the Google Play Store
+                  </li>
+                </ul>
+              </div>
             </div>
             <div class="col-lg-6">
               <h3 class="resume-title">Professional Experience</h3>
               <div class="resume-item">
                 <h4>Software Development Engineer</h4>
                 <h5>Dec 2021 - Present</h5>
+                <p><em>Kount, an Equifax Company</em></p>
                 <p><em>Boise, ID </em></p>
                 <p></p>
                 <ul>
@@ -290,9 +352,34 @@
                 </ul>
               </div>
               <div class="resume-item">
+                <h4>Software Development Engineer in Test</h4>
+                <h5>May - Dec 2021</h5>
+                <p><em>Kount, an Equifax Company</em></p>
+                <p><em>Boise, ID </em></p>
+                <p></p>
+                <ul>
+                  <li>
+                    Improved code reliability through integration, service, and
+                    e2e tests
+                  </li>
+                  <li>
+                    Supported deployments and maintained high performance
+                    through load testing of kubernetes clusters
+                  </li>
+                  <li>
+                    Deployed ci/cd pipelines to automate integration process
+                  </li>
+                </ul>
+              </div>
+              <div class="resume-item">
                 <h4>IT Intern</h4>
                 <h5>Apr - Sep 2019</h5>
-                <p><em>Salt Lake City, UT</em></p>
+                <p>
+                  <em>Center for High Performance Computing</em>
+                </p>
+                <p>
+                  <em>Salt Lake City, UT</em>
+                </p>
                 <p></p>
                 <ul>
                   <li>
@@ -309,6 +396,7 @@
               <div class="resume-item">
                 <h4>Nuclear Safety Intern</h4>
                 <h5>May - Aug 2017</h5>
+                <p><em>Mission Support Alliance</em></p>
                 <p><em>Richland, WA</em></p>
                 <p></p>
                 <ul>
@@ -366,14 +454,11 @@
                       <a href="#" class="facebook"
                         ><i class="bi bi-facebook"></i
                       ></a>
-                      <a href="#" class="instagram"
-                        ><i class="bi bi-instagram"></i
-                      ></a>
-                      <a href="#" class="google-plus"
-                        ><i class="bi bi-skype"></i
-                      ></a>
                       <a href="#" class="linkedin"
                         ><i class="bi bi-linkedin"></i
+                      ></a>
+                      <a href="#" class="telegram"
+                        ><i class="bi bi-telegram"></i
                       ></a>
                     </div>
                   </div>
@@ -467,16 +552,12 @@
       <div class="container">
         <h3>Eli Hebdon</h3>
         <hr />
-        <p>
-          Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni
-          eligendi fuga maxime saepe commodi placeat.
-        </p>
+
         <div class="social-links">
-          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="telegram"><i class="bi bi-telegram"></i></a>
         </div>
       </div>
     </footer>

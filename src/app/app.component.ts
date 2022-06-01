@@ -3,10 +3,9 @@ import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 import {
   fadeInOnEnterAnimation,
   fadeOutOnLeaveAnimation,
-  slideInDownAnimation,
-  slideInDownOnEnterAnimation,
   slideInLeftOnEnterAnimation,
-  slideInRightOnEnterAnimation,
+  slideInUpOnEnterAnimation,
+  slideOutDownOnLeaveAnimation,
 } from 'angular-animations';
 
 @Component({
@@ -16,7 +15,9 @@ import {
   animations: [
     fadeInOnEnterAnimation(),
     slideInLeftOnEnterAnimation(),
-    fadeOutOnLeaveAnimation(),
+    fadeOutOnLeaveAnimation({ duration: 500 }),
+    slideInUpOnEnterAnimation(),
+    slideOutDownOnLeaveAnimation(),
   ],
 })
 export class AppComponent {

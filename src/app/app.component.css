@@ -281,6 +281,7 @@ h6 {
     top right;
   background-size: cover;
   position: relative;
+  z-index: 1;
 }
 #profile_pic {
   width: 15rem;
@@ -545,7 +546,7 @@ section {
 .about .image {
   background: url("../assets/img/portfolio/hiking.jpg") center center no-repeat;
   background-size: cover;
-  min-height: 400px;
+  min-height: 500px;
 }
 
 .about .image-container {
@@ -1050,7 +1051,6 @@ section {
   display: inline-block;
   color: #687683;
   line-height: 1;
-  margin: 0 8px;
   transition: 0.3s;
   padding: 14px;
   border-radius: 50px;
@@ -1136,6 +1136,45 @@ section {
 .contact .php-email-form button[type="submit"]:hover {
   background: #ffc85a;
 }
+.social-vert-container {
+  width: 40px;
+  position: absolute;
+  bottom: 0px;
+  left: 40px;
+  right: auto;
+}
+.social-vert {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: outside none none;
+}
+.social-vert li a {
+  font-size: 18px;
+  display: inline-block;
+  background: #6fbbd3;
+  color: #fff;
+  line-height: 1;
+  padding: 9px 0;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+.social-vert li {
+  margin: 10px;
+}
+.social-vert::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90px;
+  margin: 0 auto;
+  background-color: white;
+}
 @-webkit-keyframes animate-loading {
   0% {
     transform: rotate(0deg);
@@ -1193,22 +1232,20 @@ section {
   padding: 0;
   margin: 0 0 40px 0;
 }
-#footer .social-links {
-  margin: 0 0 40px 0;
-}
+
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
   background: #6fbbd3;
   color: #fff;
   line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
+  padding: 9px 0;
   border-radius: 50%;
   text-align: center;
   width: 36px;
   height: 36px;
   transition: 0.3s;
+  margin: 20px;
 }
 #footer .social-links a:hover {
   background: #f3a200;
