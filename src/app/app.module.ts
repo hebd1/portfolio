@@ -7,9 +7,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {} from '@angular/material/core';
 import { ProgressDirective } from './directives/progress.directive';
 import { MatIconModule } from '@angular/material/icon';
+import { HeroComponent } from './components/hero/hero.component';
 
 @NgModule({
-  declarations: [AppComponent, ProgressDirective],
+  declarations: [AppComponent, ProgressDirective, HeroComponent],
   imports: [
     MatProgressBarModule,
     BrowserModule,
