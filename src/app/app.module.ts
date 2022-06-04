@@ -8,9 +8,10 @@ import {} from '@angular/material/core';
 import { ProgressDirective } from './directives/progress.directive';
 import { MatIconModule } from '@angular/material/icon';
 import { HeroComponent } from './components/hero/hero.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
-  declarations: [AppComponent, ProgressDirective, HeroComponent],
+  declarations: [AppComponent, ProgressDirective, HeroComponent, AboutComponent],
   imports: [
     MatProgressBarModule,
     BrowserModule,
