@@ -21,21 +21,11 @@ import {
   ],
 })
 export class AppComponent {
-  @ViewChild('testDiv', { static: false })
-  private testDiv!: ElementRef<HTMLDivElement>;
-  isVisible!: boolean;
-  title = 'portfolio';
   scrolled!: boolean;
 
   ngAfterViewInit(): void {}
 
   @HostListener('window:scroll', ['$event']) onScrollEvent($event: any) {
     this.scrolled = window.scrollY == 0 ? false : true;
-    if (this.testDiv) {
-      const rect = this.testDiv.nativeElement.getBoundingClientRect();
-      const topShown = rect.top >= 0;
-      const bottomShown = rect.bottom <= window.innerHeight;
-      this.isVisible = bottomShown;
-    }
   }
 }

@@ -5,6 +5,7 @@ import {
   fadeInOnEnterAnimation,
   fadeOutOnLeaveAnimation,
   slideInLeftOnEnterAnimation,
+  slideInRightOnEnterAnimation,
   slideInUpOnEnterAnimation,
   slideOutDownOnLeaveAnimation,
 } from 'angular-animations';
@@ -16,6 +17,7 @@ import { BaseComponent } from '../base/base.component';
   animations: [
     fadeInOnEnterAnimation(),
     slideInLeftOnEnterAnimation(),
+    slideInRightOnEnterAnimation(),
     fadeOutOnLeaveAnimation({ duration: 500 }),
     slideInUpOnEnterAnimation(),
     slideOutDownOnLeaveAnimation(),
