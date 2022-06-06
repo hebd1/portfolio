@@ -16,7 +16,7 @@ import { BaseComponent } from '../base/base.component';
   styleUrls: ['./projects.component.css'],
   animations: [
     fadeInOnEnterAnimation(),
-    slideInLeftOnEnterAnimation(),
+    slideInLeftOnEnterAnimation({ delay: 750, duration: 500 }),
     slideInRightOnEnterAnimation(),
     fadeOutOnLeaveAnimation({ duration: 500 }),
     slideInUpOnEnterAnimation(),

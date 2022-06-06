@@ -12,9 +12,10 @@ import { AboutComponent } from './components/about/about.component';
 import { ResumeComponent } from './components/resume/resume.component';
 import { BaseComponent } from './components/base/base.component';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
-  declarations: [AppComponent, ProgressDirective, HeroComponent, AboutComponent, ResumeComponent, BaseComponent, ProjectsComponent],
+  declarations: [AppComponent, ProgressDirective, HeroComponent, AboutComponent, ResumeComponent, BaseComponent, ProjectsComponent, ContactComponent],
   imports: [
     MatProgressBarModule,
     BrowserModule,
