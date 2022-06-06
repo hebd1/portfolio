@@ -198,6 +198,18 @@ section {
   display: block;
 }
 
+#wordgame {
+  border-radius: 0.5em;
+  height: 95%;
+  width: 95%;
+}
+
+.wordgame {
+  position: relative;
+  bottom: 5rem;
+  left: 10rem;
+}
+
 #yt_video {
   border-radius: 0.5em;
 }

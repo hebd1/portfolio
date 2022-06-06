@@ -98,5 +98,52 @@
       </div>
     </div>
   </div>
+  <div
+    *ngIf="isVisible"
+    [@slideInRightOnEnter]
+    [@fadeOutOnLeave]
+    class="row justify-content-center align-items-center"
+  >
+    <div class="col-lg-8 justify-content-center align-items-center">
+      <div class="project-content">
+        <div class="project-description">
+          <div class="card mx-auto">
+            <h3 class="project-title">Trivia Clash</h3>
+            <p class="card-text">
+              multiplayer web app where participants compete to see who is the
+              trivia champion
+            </p>
+            <ul class="project-tech-list">
+              <li>Android Studio,</li>
+              <li>Java,</li>
+              <li>AWS Cognito,</li>
+              <li>animations</li>
+            </ul>
+            <div class="social-links">
+              <a href="#" class="github"><i class="bi bi-github"></i></a>
+            </div>
+          </div>
+          <div class="wordgame d-flex justify-content-end">
+            <img
+              class="d-none d-lg-block"
+              id="wordgame"
+              src="../../../assets/img/wordgame.pn.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 justify-content-center align-items-center">
+      <!-- <div class="d-flex justify-content-start">
+        <img
+          class="d-none d-lg-block"
+          id="wordgame"
+          src="../../../assets/img/wordgame.pn.png"
+          alt=""
+        />
+      </div> -->
+    </div>
+  </div>
 </section>
 <!-- End My Portfolio Section -->
