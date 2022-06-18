@@ -2,10 +2,15 @@
   # About Me
   --------------------------------------------------------------*/
 
+.about {
+  min-height: 900px;
+  background-color: #1c1d24;
+}
+
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #3b434a;
+  color: #ffff;
   text-transform: uppercase;
 }
 .about .content ul {
@@ -44,7 +49,7 @@
   line-height: 30px;
   display: block;
   font-weight: 700;
-  color: #3b434a;
+  color: #ffff;
   margin-left: 50px;
 }
 .about .content .count-box p {
@@ -52,25 +57,25 @@
   margin: 0 0 0 50px;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
-  color: #5d6a75;
+  color: #ffff;
 }
 .about .content .count-box a {
   font-weight: 600;
   display: block;
   margin-top: 20px;
-  color: #5d6a75;
+  color: #ffff;
   font-size: 15px;
-  font-family: "Satisfy", serif;
   transition: ease-in-out 0.3s;
 }
 .about .content .count-box a:hover {
-  color: #82909c;
+  color: #ffff;
 }
 .about .image {
   background: url("../../../assets/img/portfolio/hiking.jpg") center center
     no-repeat;
   background-size: cover;
   min-height: 500px;
+  margin-bottom: 2rem;
 }
 
 .about .image-container {
@@ -95,7 +100,7 @@
   display: block;
   font-weight: 700;
   font-family: "Raleway", sans-serif;
-  color: #3b434a;
+  color: #ffff;
 }
 .about .skills-content .progress .skill .val {
   float: right;
@@ -133,14 +138,14 @@ section {
   text-transform: uppercase;
   margin-bottom: 20px;
   padding-bottom: 0;
-  color: #3b434a;
+  color: #ffff;
   position: relative;
   z-index: 2;
 }
 .section-title span {
   position: absolute;
   top: 30px;
-  color: #eef0f2;
+  color: #5e6472;
   left: 0;
   right: 0;
   z-index: 1;

@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  color: #ffff;
 }
 
 a {
@@ -69,7 +69,7 @@ h6 {
 }
 #header.header-scrolled {
   height: 60px;
-  background: rgba(25, 28, 31, 0.8);
+  background: #1c1d24;
 }
 
 /*--------------------------------------------------------------
@@ -141,7 +141,7 @@ h6 {
   font-size: 14px;
   text-transform: none;
   font-weight: 400;
-  color: #3b434a;
+  color: #ffff;
   letter-spacing: 1px;
 }
 .navbar .dropdown ul a i {
@@ -231,7 +231,7 @@ h6 {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 14px;
-  color: #3b434a;
+  color: #ffff;
 }
 .navbar-mobile a:hover,
 .navbar-mobile .active,
@@ -315,7 +315,6 @@ h6 {
 #hero h1 {
   margin: 0 0 10px 0;
   font-size: 64px;
-  font-family: "Satisfy", serif;
   color: #fff;
 }
 #hero h2 {
@@ -328,7 +327,7 @@ h6 {
 }
 #hero .btn-scroll {
   transition: 0.4s;
-  color: rgba(255, 255, 255, 0.6);
+  color: #ffff;
   animation: up-down 1s ease-in-out infinite alternate-reverse both;
 }
 #hero .btn-scroll i {
@@ -377,7 +376,7 @@ section {
 }
 
 .section-bg {
-  background-color: white;
+  background-color: grey;
 }
 
 .section-title {
@@ -391,14 +390,14 @@ section {
   text-transform: uppercase;
   margin-bottom: 20px;
   padding-bottom: 0;
-  color: #3b434a;
+  color: #ffff;
   position: relative;
   z-index: 2;
 }
 .section-title span {
   position: absolute;
   top: 30px;
-  color: #eef0f2;
+  color: #5e6472;
   left: 0;
   right: 0;
   z-index: 1;
@@ -934,7 +933,6 @@ section {
   font-weight: 700;
   color: #fff;
   position: relative;
-  font-family: "Satisfy", serif;
   padding: 0;
   margin: 0 0 15px 0;
 }

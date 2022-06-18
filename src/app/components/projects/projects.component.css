@@ -1,6 +1,11 @@
 /*--------------------------------------------------------------
   # My Portfolio
   --------------------------------------------------------------*/
+
+.portfolio {
+  min-height: 1900px;
+  background-color: #1c1d24;
+}
 .portfolio #portfolio-flters {
   list-style: none;
   margin-bottom: 20px;
@@ -160,14 +165,14 @@ section {
   text-transform: uppercase;
   margin-bottom: 20px;
   padding-bottom: 0;
-  color: #3b434a;
+  color: #ffff;
   position: relative;
   z-index: 2;
 }
 .section-title span {
   position: absolute;
   top: 30px;
-  color: #eef0f2;
+  color: #5e6472;
   left: 0;
   right: 0;
   z-index: 1;
@@ -207,7 +212,7 @@ section {
 .wordgame {
   position: relative;
   bottom: 5rem;
-  left: 10rem;
+  left: 20rem;
 }
 
 #yt_video {
@@ -224,6 +229,7 @@ section {
   padding: 25px;
   border-radius: 0.5em;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: #5e6472;
 }
 
 .card .card-text {
@@ -284,7 +290,7 @@ section {
 .project-content .social-links a {
   font-size: 18px;
   display: inline-block;
-  color: #687683;
+  color: #6fbbd3;
   line-height: 1;
   transition: 0.3s;
   padding: 14px;

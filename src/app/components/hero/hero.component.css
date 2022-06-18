@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  background-color: #1c1d24;
 }
 
 a {
@@ -124,7 +124,7 @@ h6 {
   font-size: 14px;
   text-transform: none;
   font-weight: 400;
-  color: #3b434a;
+  color: #ffff;
   letter-spacing: 1px;
 }
 .navbar .dropdown ul a i {
@@ -214,7 +214,7 @@ h6 {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 14px;
-  color: #3b434a;
+  color: #ffff;
 }
 .navbar-mobile a:hover,
 .navbar-mobile .active,
@@ -298,7 +298,6 @@ h6 {
 #hero h1 {
   margin: 0 0 10px 0;
   font-size: 64px;
-  font-family: "Satisfy", serif;
   color: #fff;
 }
 #hero h2 {
