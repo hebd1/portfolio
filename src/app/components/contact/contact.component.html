@@ -52,9 +52,8 @@
         class="col-lg-6"
       >
         <form
-          action="forms/contact.php"
-          method="post"
-          role="form"
+          [formGroup]="FormData"
+          (ngSubmit)="onSubmit(FormData.value)"
           class="php-email-form"
         >
           <div class="row">
@@ -65,6 +64,7 @@
                 class="form-control"
                 id="name"
                 placeholder="Your Name"
+                formControlName="Name"
                 required
               />
             </div>
@@ -75,6 +75,7 @@
                 name="email"
                 id="email"
                 placeholder="Your Email"
+                formControlName="Email"
                 required
               />
             </div>
@@ -86,6 +87,7 @@
               name="subject"
               id="subject"
               placeholder="Subject"
+              formControlName="Subject"
               required
             />
           </div>
@@ -95,6 +97,7 @@
               name="message"
               rows="6"
               placeholder="Message"
+              formControlName="Message"
               required
             ></textarea>
           </div>

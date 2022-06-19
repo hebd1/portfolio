@@ -13,18 +13,33 @@ import { ResumeComponent } from './components/resume/resume.component';
 import { BaseComponent } from './components/base/base.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { ContactService } from './services/contact.service';
 
 @NgModule({
-  declarations: [AppComponent, ProgressDirective, HeroComponent, AboutComponent, ResumeComponent, BaseComponent, ProjectsComponent, ContactComponent],
+  declarations: [
+    AppComponent,
+    ProgressDirective,
+    HeroComponent,
+    AboutComponent,
+    ResumeComponent,
+    BaseComponent,
+    ProjectsComponent,
+    ContactComponent,
+  ],
   imports: [
     MatProgressBarModule,
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     MatIconModule,
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
   exports: [MatProgressBarModule],
-  providers: [],
+  // adding to providers array makes service injectable
+  providers: [ContactService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
