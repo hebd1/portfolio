@@ -21,4 +21,7 @@ import { BaseComponent } from '../base/base.component';
     slideOutDownOnLeaveAnimation(),
   ],
 })
-export class AboutComponent extends BaseComponent {}
+export class AboutComponent extends BaseComponent {
+  @ViewChild('aboutNav', { static: false })
+  private aboutNav!: ElementRef<HTMLDivElement>;
+}
