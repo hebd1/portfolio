@@ -143,12 +143,16 @@
   padding: 0;
 }
 
+.svg-header {
+  background-color: #7393b3;
+}
+
 /*--------------------------------------------------------------
   # Sections General
   --------------------------------------------------------------*/
-section {
+/* section {
   padding: 60px 0;
-}
+} */
 
 .section-bg {
   background-color: white;

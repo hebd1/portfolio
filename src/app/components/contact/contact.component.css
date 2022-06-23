@@ -4,7 +4,7 @@
 
 .contact {
   min-height: 600px;
-  background-color: #1c1d24;
+  background-color: #7393b3;
 }
 
 .contact .info-box {
@@ -143,11 +143,15 @@ textarea {
   border-radius: 1rem;
 }
 
+.svg-header {
+  background-color: #1c1d24;
+}
+
 /*--------------------------------------------------------------
   # Sections General
   --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding-bottom: 60px;
 }
 
 .section-bg {
