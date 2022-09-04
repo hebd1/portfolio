@@ -129,7 +129,7 @@ section {
 
 .section-title {
   text-align: center;
-  padding: 30px 0;
+  padding: 50px 0;
   position: relative;
 }
 .section-title h2 {
@@ -145,7 +145,7 @@ section {
 .section-title span {
   position: absolute;
   top: 30px;
-  color: #5e6472;
+  color: #ffff;
   left: 0;
   right: 0;
   z-index: 1;
