@@ -1,0 +1,10 @@
+name: deploy action
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy github page:
+    steps:
+      - name: build and deploy
+        run: npm run deploy
