@@ -2,7 +2,7 @@ name: deploy action
 on:
   push:
     branches:
-      - main
+      - master
 jobs:
   deploy github page:
     steps:
