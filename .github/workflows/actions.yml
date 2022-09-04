@@ -5,6 +5,7 @@ on:
       - master
 jobs:
   deploy github page:
+    runs-on: ubuntu-20.04
     steps:
       - name: build and deploy
         run: npm run deploy
