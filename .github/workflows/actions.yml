@@ -1,11 +1,11 @@
-name: deploy action
-on:
-  push:
-    branches:
-      - master
-jobs:
-  deploy_github_page:
-    runs-on: ubuntu-20.04
-    steps:
-      - name: build and deploy
-        run: npm run deploy
+# name: deploy action
+# on:
+#   push:
+#     branches:
+#       - master
+# jobs:
+#   deploy_github_page:
+#     runs-on: ubuntu-20.04
+#     steps:
+#       - name: build and deploy
+#         run: npm run deploy
